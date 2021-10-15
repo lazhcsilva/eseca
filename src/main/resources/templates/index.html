@@ -30,14 +30,55 @@
         </nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm">
-					Uma de três colunas
+				<div class="col">
+					<form action="/loginProfessor" method="post">
+						<div class="imgcontainer">
+							<img src="img_avatar2.png" alt="Avatar" class="avatar">
+						</div>
+					
+						<div class="container">
+							<label for="uname"><b>Email professor</b></label>
+							<input type="text" placeholder="meu@email" name="uname" required>
+					
+							<label for="psw"><b>Password</b></label>
+							<input type="password" placeholder="Senha" name="psw" required>
+					
+							<button type="submit">Login</button>
+							<label>
+								<input type="checkbox" checked="checked" name="remember"> Lembrar
+							</label>
+						</div>
+					
+						<div class="container" style="background-color:#f1f1f1">
+							<button type="button" class="registrar">Registrar</button>
+							<span class="psw">Esqueceu a <a href="#">senha?</a></span>
+						</div>
+					</form>
 				</div>
-				<div class="col-sm">
-					Uma de três colunas
-				</div>
-				<div class="col-sm">
-					Uma de três colunas
+				<div class="col">
+					<form action="/loginAluno" method="post">
+						<div class="imgcontainer">
+							<img src="img_avatar2.png" alt="Avatar" class="avatar">
+						</div>
+					
+						<div class="container">
+							<label for="uname"><b>Email aluno</b></label>
+							<input type="text" placeholder="meu@email" name="uname" required>
+					
+							<label for="psw"><b>Password</b></label>
+							<input type="password" placeholder="Senha" name="psw" required>
+					
+							<button type="submit">Login</button>
+							<label>
+								<input type="checkbox" checked="checked" name="remember"> Lembrar
+							</label>
+						</div>
+					
+						<div class="container" style="background-color:#f1f1f1">
+							<button type="button" class="cancelbtn">Registrar</button>
+							<span class="psw">Esqueceu a <a href="#">senha?</a></span>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
